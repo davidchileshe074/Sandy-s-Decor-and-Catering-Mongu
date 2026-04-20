@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View the luxury portfolio of Sandy's Decor and Catering. Exquisite wedding setups, elegant corporate events, and traditional ceremonies.">
+    <title>Portfolio | Sandy's Decor & Catering</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Scroll Progress -->
+    <div class="scroll-progress"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" aria-label="Back to Top"><i class="fas fa-chevron-up"></i></button>
+
+    <!-- Gold Particles Canvas -->
+    <canvas id="gold-particles"></canvas>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Sandy's<span>.</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <h1>Our Portfolio</h1>
+    </div>
+
+    <!-- Gallery Section -->
+    <section class="section-padding container">
+        
+        <div class="gallery-filters reveal">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="weddings">Weddings</button>
+            <button class="filter-btn" data-filter="traditional">Traditional</button>
+            <button class="filter-btn" data-filter="corporate">Corporate</button>
+            <button class="filter-btn" data-filter="birthdays">Birthdays</button>
+        </div>
+
+        <div class="gallery-grid reveal">
+            <!-- Asset Images -->
+            <div class="gallery-item weddings">
+                <img src="Assets/627044655_1562209205907223_4129564044516197422_n.jpg" alt="Wedding Setup">
+                <div class="gallery-overlay"><h4>Elegant Wedding</h4></div>
+            </div>
+            <div class="gallery-item traditional">
+                <img src="Assets/627243828_1562210929240384_7332940601824509254_n.jpg" alt="Traditional Decor">
+                <div class="gallery-overlay"><h4>Traditional Elegance</h4></div>
+            </div>
+            <div class="gallery-item corporate">
+                <img src="Assets/628308741_1562209752573835_4333584941157293645_n.jpg" alt="Corporate Setup">
+                <div class="gallery-overlay"><h4>Gala Setup</h4></div>
+            </div>
+            <div class="gallery-item weddings">
+                <img src="Assets/661348130_1614911277303682_8335772444834377179_n.jpg" alt="Wedding Detail">
+                <div class="gallery-overlay"><h4>Floral Details</h4></div>
+            </div>
+            <div class="gallery-item birthdays">
+                <img src="Assets/661640874_1614912300636913_4076973834611439213_n.jpg" alt="Birthday Setup">
+                <div class="gallery-overlay"><h4>Private Birthday</h4></div>
+            </div>
+            <div class="gallery-item traditional">
+                <img src="Assets/662063618_1614911190637024_3838739631246377044_n.jpg" alt="Kitchen Party">
+                <div class="gallery-overlay"><h4>Kitchen Party</h4></div>
+            </div>
+            <div class="gallery-item corporate">
+                <img src="Assets/662581245_1614911027303707_7765620432106844090_n.jpg" alt="Event Hall">
+                <div class="gallery-overlay"><h4>Corporate Event</h4></div>
+            </div>
+            <div class="gallery-item weddings">
+                <img src="Assets/662686814_1614912187303591_1041451442275917965_n.jpg" alt="Table Setting">
+                <div class="gallery-overlay"><h4>Table Setting</h4></div>
+            </div>
+            <div class="gallery-item birthdays">
+                <img src="Assets/663272008_1614912257303584_8154366328534851374_n.jpg" alt="Celebration">
+                <div class="gallery-overlay"><h4>Anniversary Setting</h4></div>
+            </div>
+            <div class="gallery-item traditional">
+                <img src="Assets/663309377_1614911240637019_8492233189099750447_n.jpg" alt="Chilanga Mulilo">
+                <div class="gallery-overlay"><h4>Chilanga Mulilo</h4></div>
+            </div>
+            <div class="gallery-item corporate">
+                <img src="Assets/666801320_1614911160637027_1191131418540157282_n.jpg" alt="Corporate VIP">
+                <div class="gallery-overlay"><h4>VIP Treatment</h4></div>
+            </div>
+            <div class="gallery-item weddings">
+                <img src="Assets/666923809_1614911130637030_6656535040021985896_n.jpg" alt="Bridal Setup">
+                <div class="gallery-overlay"><h4>Bridal Corner</h4></div>
+            </div>
+            <div class="gallery-item traditional">
+                <img src="Assets/672665155_1625144606280349_7689998451813542573_n.jpg" alt="Culture">
+                <div class="gallery-overlay"><h4>Cultural Display</h4></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h3 class="footer-logo">Sandy's<span>.</span></h3>
+                <p class="footer-text">Mongu-based luxury event service provider dedicated to delivering elegant décor and exceptional catering for all occasions.</p>
+            </div>
+            <div>
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-heading">Contact Us</h4>
+                <ul class="footer-links">
+                    <li><i class="fas fa-phone"></i> 0977301597</li>
+                    <li><i class="fas fa-envelope"></i> sandrakalenga12@gmail.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Mongu, Zambia</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Sandy's Decor and Catering. All Rights Reserved. Crafted with passion.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/260977301597" class="floating-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close"><i class="fas fa-times"></i></span>
+        <img src="" alt="Enlarged" class="lightbox-img" id="lightbox-img">
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>

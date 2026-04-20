@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Sandy's Decor and Catering to book your luxury event setup in Mongu, Zambia.">
+    <title>Contact & Booking | Sandy's Decor & Catering</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Scroll Progress -->
+    <div class="scroll-progress"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" aria-label="Back to Top"><i class="fas fa-chevron-up"></i></button>
+
+    <!-- Gold Particles Canvas -->
+    <canvas id="gold-particles"></canvas>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Sandy's<span>.</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <h1>Contact & Booking</h1>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="section-padding container">
+        <div class="contact-wrapper reveal">
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p style="margin-bottom: 30px; color: #ececec;">We would love to hear from you. Reach out to discuss how we can make your next event a masterpiece.</p>
+                
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <strong>Phone</strong><br>
+                        <a href="tel:0977301597" style="color: #fff;">0977 301 597</a>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <strong>Email</strong><br>
+                        <a href="mailto:sandrakalenga12@gmail.com" style="color: #fff;">sandrakalenga12@gmail.com</a>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <strong>Location</strong><br>
+                        <span>Mongu, Zambia</span>
+                    </div>
+                </div>
+
+                <div style="margin-top: 40px; text-align: center;">
+                    <a href="https://wa.me/260977301597" class="btn btn-primary" target="_blank" style="background: #25D366; color: #fff;">
+                        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Booking Form -->
+            <div class="contact-form">
+                <h3 class="section-title" style="font-size: 2rem; color: var(--primary-color);">Book Your Event</h3>
+                <form action="#">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="name" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" class="form-control" name="phone" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" name="event_type" required>
+                            <option value="" disabled selected>Select Event Type</option>
+                            <option value="wedding">Wedding</option>
+                            <option value="traditional">Traditional Event (e.g. Kitchen Party, Chilanga Mulilo)</option>
+                            <option value="corporate">Corporate Event</option>
+                            <option value="birthday">Birthday / Private</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" class="form-control" name="event_date" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" name="message" rows="5" placeholder="Tell us more about your event..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">Submit Booking Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="reveal">
+        <!-- Embed Google Map for Mongu, Zambia -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124505.47466530687!2d23.08272895697207!3d-15.26620986161405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x195eb6347072afb3%3A0xc6cb5a64b9dd8eb7!2sMongu%2C%20Zambia!5e0!3m2!1sen!2sus!4v1713500000000!5m2!1sen!2sus" width="100%" height="450" style="border:0; display: block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h3 class="footer-logo">Sandy's<span>.</span></h3>
+                <p class="footer-text">Mongu-based luxury event service provider dedicated to delivering elegant décor and exceptional catering for all occasions.</p>
+            </div>
+            <div>
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-heading">Contact Us</h4>
+                <ul class="footer-links">
+                    <li><i class="fas fa-phone"></i> 0977301597</li>
+                    <li><i class="fas fa-envelope"></i> sandrakalenga12@gmail.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Mongu, Zambia</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Sandy's Decor and Catering. All Rights Reserved. Crafted with passion.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/260977301597" class="floating-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>

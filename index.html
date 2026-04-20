@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sandy's Decor and Catering - Luxury event décor and catering services in Mongu, Zambia. Elevating weddings, traditional ceremonies, and corporate events.">
+    <title>Sandy's Decor & Catering | Luxury Events in Mongu</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Scroll Progress -->
+    <div class="scroll-progress"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" aria-label="Back to Top"><i class="fas fa-chevron-up"></i></button>
+
+    <!-- Gold Particles Canvas -->
+    <canvas id="gold-particles"></canvas>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Sandy's<span>.</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Hero Slider Backgrounds -->
+        <div class="hero-slider-bg active" style="background-image: url('https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&q=80&w=2000');"></div>
+        <div class="hero-slider-bg" style="background-image: url('https://images.unsplash.com/photo-1533104816-cdd244cb3f5d?auto=format&fit=crop&q=80&w=2000');"></div>
+        <div class="hero-slider-bg" style="background-image: url('https://images.unsplash.com/photo-1505362892708-9cebc2d4494d?auto=format&fit=crop&q=80&w=2000');"></div>
+        
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Luxury Décor & Catering for Every Occasion</h1>
+            <p style="height: 30px;">Creating <span class="typewriter-text"></span></p>
+            <div class="btn-group">
+                <a href="#" class="btn btn-primary open-modal">Book Your Event</a>
+                <a href="portfolio.html" class="btn btn-outline">View Our Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infinite Marquee -->
+    <div class="marquee-wrapper reveal">
+        <div class="marquee-content">
+            <span><i class="fas fa-gem text-gold"></i> LUXURY WEDDING DECOR</span>
+            <span><i class="fas fa-glass-cheers text-gold"></i> CORPORATE GALAS</span>
+            <span><i class="fas fa-crown text-gold"></i> TRADITIONAL STYLING</span>
+            <span><i class="fas fa-utensils text-gold"></i> EXQUISITE CATERING</span>
+            <span><i class="fas fa-gem text-gold"></i> LUXURY WEDDING DECOR</span>
+            <span><i class="fas fa-glass-cheers text-gold"></i> CORPORATE GALAS</span>
+            <span><i class="fas fa-crown text-gold"></i> TRADITIONAL STYLING</span>
+            <span><i class="fas fa-utensils text-gold"></i> EXQUISITE CATERING</span>
+        </div>
+    </div>
+
+    <!-- Services Overview -->
+    <section class="section-padding container">
+        <div class="text-center reveal">
+            <h2 class="section-title">Our Premium Services</h2>
+            <p class="section-subtitle">Exquisite designs and culinary excellence tailored for your special moments.</p>
+        </div>
+        
+        <div class="services-grid reveal">
+            <div class="service-card">
+                <i class="fas fa-rings service-icon text-gold"></i>
+                <h3>Event Décor</h3>
+                <p>Luxurious setups for weddings, kitchen parties, and traditional ceremonies. We transform spaces into magical realms.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-utensils service-icon text-gold"></i>
+                <h3>Catering Services</h3>
+                <p>Professional catering that delights the palate with beautiful presentation and mouth-watering flavors.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-building service-icon text-gold"></i>
+                <h3>Corporate Events</h3>
+                <p>Refined setups for corporate galas, end-of-year functions, and professional gatherings.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-birthday-cake service-icon text-gold"></i>
+                <h3>Private Parties</h3>
+                <p>Intimate to grandiose setups for birthdays, anniversaries, and lavish private celebrations.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Highlights -->
+    <section class="section-padding" style="background-color: var(--background-alt);">
+        <div class="container">
+            <div class="text-center reveal">
+                <h2 class="section-title">Featured Highlights</h2>
+                <p class="section-subtitle">A glimpse into our world of elegance and grand celebrations.</p>
+            </div>
+            
+            <div class="gallery-grid reveal">
+                <div class="gallery-item">
+                    <img src="Assets/627044655_1562209205907223_4129564044516197422_n.jpg" alt="Elegant Setup">
+                    <div class="gallery-overlay">
+                        <h4>Elegant Setup</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="Assets/627243828_1562210929240384_7332940601824509254_n.jpg" alt="Wedding Decor">
+                    <div class="gallery-overlay">
+                        <h4>Wedding Decor</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="Assets/628308741_1562209752573835_4333584941157293645_n.jpg" alt="Catering Presentation">
+                    <div class="gallery-overlay">
+                        <h4>Catering Showcase</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&q=80&w=800" alt="Exquisite Details">
+                    <div class="gallery-overlay">
+                        <h4>Exquisite Details</h4>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center" style="margin-top: 3rem;">
+                <a href="portfolio.html" class="btn btn-outline" style="border-color: var(--primary-color); color: var(--primary-color);">Discover More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section reveal">
+        <div class="container stats-grid">
+            <div class="stat-item">
+                <h3 class="stat-number" data-target="150">0</h3>
+                <p>Events Completed</p>
+            </div>
+            <div class="stat-item">
+                <h3 class="stat-number" data-target="300">0</h3>
+                <p>Happy Clients</p>
+            </div>
+            <div class="stat-item">
+                <h3 class="stat-number" data-target="10">0</h3>
+                <p>Years Experience</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section-padding container">
+        <div class="text-center reveal">
+            <h2 class="section-title">Client Love</h2>
+            <p class="section-subtitle">What our esteemed clients say about our services.</p>
+        </div>
+        
+        <div class="testimonials-slider reveal">
+            <div class="testimonial-item active">
+                <p class="testimonial-text">"Beautiful décor and professional service. Sandy's team transformed our wedding venue into an absolute dream. Everything was breathtaking!"</p>
+                <h4 class="testimonial-author">- Chileshe & Mutinta</h4>
+            </div>
+            <div class="testimonial-item">
+                <p class="testimonial-text">"Highly recommend for weddings and events. The catering was superb, and the presentation of the food left all our guests amazed. True luxury in Mongu."</p>
+                <h4 class="testimonial-author">- The Kalenga Family</h4>
+            </div>
+            <div class="slider-dots">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner reveal">
+        <div class="container">
+            <h2>Let’s Make Your Event Unforgettable</h2>
+            <a href="#" class="btn btn-primary open-modal">Book Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h3 class="footer-logo">Sandy's<span>.</span></h3>
+                <p class="footer-text">Mongu-based luxury event service provider dedicated to delivering elegant décor and exceptional catering for all occasions.</p>
+            </div>
+            <div>
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-heading">Contact Us</h4>
+                <ul class="footer-links">
+                    <li><i class="fas fa-phone"></i> 0977301597</li>
+                    <li><i class="fas fa-envelope"></i> sandrakalenga12@gmail.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Mongu, Zambia</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Sandy's Decor and Catering. All Rights Reserved. Crafted with passion.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/260977301597" class="floating-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Booking Modal -->
+    <div class="modal-overlay" id="bookingModal">
+        <div class="modal-content">
+            <span class="modal-close"><i class="fas fa-times"></i></span>
+            <h3 class="modal-title">Request a Quote</h3>
+            <form action="#" class="contact-form" style="padding: 0; box-shadow: none;">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" class="form-control" placeholder="Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <select class="form-control" required>
+                        <option value="" disabled selected>Event Type</option>
+                        <option value="wedding">Wedding</option>
+                        <option value="traditional">Traditional Event</option>
+                        <option value="corporate">Corporate</option>
+                        <option value="birthday">Birthday / Private</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="date" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-submit">Submit Request</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close"><i class="fas fa-times"></i></span>
+        <img src="" alt="Enlarged" class="lightbox-img" id="lightbox-img">
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
