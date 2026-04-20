@@ -847,22 +847,23 @@ ul {
   border-radius: 50%;
   z-index: 9999;
   pointer-events: none;
+  mix-blend-mode: difference;
 }
 .cursor-dot {
   width: 8px;
   height: 8px;
-  background-color: var(--secondary-color);
+  background-color: #FFF;
 }
 .cursor-outline {
   width: 40px;
   height: 40px;
-  border: 2px solid rgba(212, 175, 55, 0.5); /* Gold outline */
+  border: 2px solid rgba(255, 255, 255, 0.8);
   transition: width 0.2s, height 0.2s, background-color 0.2s;
 }
 .cursor-outline.hover {
   width: 60px;
   height: 60px;
-  background-color: rgba(212, 175, 55, 0.1);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* Back to Top Button */
@@ -1068,4 +1069,33 @@ ul {
 @keyframes ripples {
   0% { width: 0px; height: 0px; opacity: 0.8; }
   100% { width: 500px; height: 500px; opacity: 0; }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background-alt); 
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color); 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color); 
+}
+
+/* Image Trail Effect */
+.trail-image {
+  position: absolute;
+  width: 250px;
+  height: 350px;
+  object-fit: cover;
+  pointer-events: none;
+  z-index: 1000;
+  opacity: 0;
+  border-radius: 12px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+  transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }

@@ -435,4 +435,83 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Split Text Animation (Scroll Reveal Letter/Word)
+    const splitTexts = document.querySelectorAll('.section-title');
+    if (splitTexts.length > 0) {
+        splitTexts.forEach(title => {
+            const text = title.innerText;
+            title.innerText = '';
+            text.split(' ').forEach((word, i) => {
+                const span = document.createElement('span');
+                span.innerText = word + ' ';
+                span.style.display = 'inline-block';
+                span.style.opacity = '0';
+                span.style.transform = 'translateY(20px)';
+                span.style.transition = `all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1) ${i * 0.15}s`;
+                title.appendChild(span);
+            });
+
+            const observer = new IntersectionObserver((entries) => {
+                if(entries[0].isIntersecting) {
+                    title.querySelectorAll('span').forEach(span => {
+                        span.style.opacity = '1';
+                        span.style.transform = 'translateY(0)';
+                    });
+                    observer.disconnect();
+                }
+            }, { threshold: 0.5 });
+            observer.observe(title);
+        });
+    }
+
+    // Image Trail Effect on Hero
+    const heroTrail = document.querySelector('.hero');
+    if (heroTrail && window.innerWidth > 768) {
+        // Using predefined Unsplash URLs simulating portfolio items
+        const trailImages = [
+            'https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=500&q=80',
+            'https://images.unsplash.com/photo-1605281317010-fe5ffe798166?w=500&q=80',
+            'https://images.unsplash.com/photo-1530103862676-de8892d12aff?w=500&q=80',
+            'https://images.unsplash.com/photo-1505362892708-9cebc2d4494d?w=500&q=80',
+            'https://images.unsplash.com/photo-1555244162-803834f70033?w=500&q=80'
+        ];
+        let globalIndex = 0;
+        let lastTime = 0;
+
+        heroTrail.addEventListener('mousemove', (e) => {
+            const now = new Date().getTime();
+            // Spawning rate limit to avoid DOM overload
+            if (now - lastTime < 150) return;
+            lastTime = now;
+
+            const img = document.createElement('img');
+            img.src = trailImages[globalIndex % trailImages.length];
+            img.className = 'trail-image';
+            
+            // Randomize slight rotation for chaotic artistic look
+            const rotation = Math.random() * 30 - 15;
+            
+            img.style.left = `${e.pageX}px`;
+            img.style.top = `${e.pageY}px`;
+            img.style.transform = `translate(-50%, -50%) rotate(${rotation}deg) scale(0.5)`;
+            
+            document.body.appendChild(img);
+            globalIndex++;
+
+            // Trigger reflow to animate in
+            void img.offsetWidth;
+            img.style.transform = `translate(-50%, -50%) rotate(${rotation}deg) scale(1)`;
+            img.style.opacity = '1';
+
+            // Automatic despawn timeout sequence
+            setTimeout(() => {
+                img.style.opacity = '0';
+                img.style.transform = `translate(-50%, -50%) rotate(${rotation}deg) scale(0.8)`;
+                setTimeout(() => {
+                    img.remove();
+                }, 500); // Wait for transition
+            }, 800); // Time visible on screen
+        });
+    }
+
 });
