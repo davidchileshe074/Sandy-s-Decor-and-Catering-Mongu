@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sandy's Decor and Catering - Luxury event décor and catering services in Mongu, Zambia. Elevating weddings, traditional ceremonies, and corporate events.">
-    <title>Sandy's Decor & Catering | Luxury Events in Mongu</title>
+    <meta name="description" content="Lucy’s Creamy Creations - Boutique cake studio in Lusaka specializing in handcrafted, elegant luxury cakes.">
+    <title>Lucy’s Creamy Creations | Luxury Boutique Cake Studio Lusaka</title>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -18,15 +18,13 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
     <!-- Scroll Progress -->
     <div class="scroll-progress"></div>
 
     <!-- Custom Cursor -->
     <div class="cursor-dot"></div>
     <div class="cursor-outline"></div>
-
-    <!-- Back to Top -->
-    <button class="back-to-top" aria-label="Back to Top"><i class="fas fa-chevron-up"></i></button>
 
     <!-- Gold Particles Canvas -->
     <canvas id="gold-particles"></canvas>
@@ -36,19 +34,19 @@
         <div class="loader"></div>
     </div>
 
-    <!-- Header Navigation -->
+    <!-- Navigation -->
     <header class="header">
         <div class="nav-container">
-            <a href="index.html" class="logo">Sandy's<span>.</span></a>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+            <a href="#" class="logo">
+                <img src="Assets/logo.png" alt="Lucy’s Creamy Creations Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#collections">Collections</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
             <div class="menu-toggle">
                 <i class="fas fa-bars"></i>
             </div>
@@ -56,105 +54,78 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <!-- Hero Slider Backgrounds -->
-        <div class="hero-slider-bg active" style="background-image: url('https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&q=80&w=2000');"></div>
-        <div class="hero-slider-bg" style="background-image: url('https://images.unsplash.com/photo-1533104816-cdd244cb3f5d?auto=format&fit=crop&q=80&w=2000');"></div>
-        <div class="hero-slider-bg" style="background-image: url('https://images.unsplash.com/photo-1505362892708-9cebc2d4494d?auto=format&fit=crop&q=80&w=2000');"></div>
-        
+    <section id="home" class="hero">
+        <div class="hero-bg" style="background-image: url('Assets/671925304_977556934792724_5728852344967526325_n.jpg');"></div>
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>Luxury Décor & Catering for Every Occasion</h1>
-            <p style="height: 30px;">Creating <span class="typewriter-text"></span></p>
+            <h1>Crafted Elegance<br>In Every Slice</h1>
+            <p>We create <span class="typewriter-text text-gold" data-words='["Luxury cakes that tell your unique story", "Artisan craftsmanship in every delicate petal", "Bespoke creations for life’s most grand celebrations", "Lusaka’s most exclusive boutique cake experience"]'></span></p>
             <div class="btn-group">
-                <a href="#" class="btn btn-primary open-modal">Book Your Event</a>
-                <a href="portfolio.html" class="btn btn-outline">View Our Work</a>
+                <a href="https://wa.me/260971042619" class="btn btn-primary">Order Your Cake</a>
+                <a href="#collections" class="btn btn-outline">Explore Collection</a>
             </div>
         </div>
     </section>
 
     <!-- Infinite Marquee -->
-    <div class="marquee-wrapper reveal">
+    <div class="marquee-wrapper">
         <div class="marquee-content">
-            <span><i class="fas fa-gem text-gold"></i> LUXURY WEDDING DECOR</span>
-            <span><i class="fas fa-glass-cheers text-gold"></i> CORPORATE GALAS</span>
-            <span><i class="fas fa-crown text-gold"></i> TRADITIONAL STYLING</span>
-            <span><i class="fas fa-utensils text-gold"></i> EXQUISITE CATERING</span>
-            <span><i class="fas fa-gem text-gold"></i> LUXURY WEDDING DECOR</span>
-            <span><i class="fas fa-glass-cheers text-gold"></i> CORPORATE GALAS</span>
-            <span><i class="fas fa-crown text-gold"></i> TRADITIONAL STYLING</span>
-            <span><i class="fas fa-utensils text-gold"></i> EXQUISITE CATERING</span>
+            <span><i class="fas fa-gem"></i> LUXURY WEDDING CAKES</span>
+            <span><i class="fas fa-birthday-cake"></i> CELEBRATION CAKES</span>
+            <span><i class="fas fa-crown"></i> CUSTOM DESIGNS</span>
+            <span><i class="fas fa-magic"></i> BOUTIQUE STUDIO</span>
+            <!-- Duplicated for seamless loop -->
+            <span><i class="fas fa-gem"></i> LUXURY WEDDING CAKES</span>
+            <span><i class="fas fa-birthday-cake"></i> CELEBRATION CAKES</span>
+            <span><i class="fas fa-crown"></i> CUSTOM DESIGNS</span>
+            <span><i class="fas fa-magic"></i> BOUTIQUE STUDIO</span>
         </div>
     </div>
 
-    <!-- Services Overview -->
-    <section class="section-padding container">
-        <div class="text-center reveal">
-            <h2 class="section-title">Our Premium Services</h2>
-            <p class="section-subtitle">Exquisite designs and culinary excellence tailored for your special moments.</p>
-        </div>
-        
-        <div class="services-grid reveal">
-            <div class="service-card">
-                <i class="fas fa-rings service-icon text-gold"></i>
-                <h3>Event Décor</h3>
-                <p>Luxurious setups for weddings, kitchen parties, and traditional ceremonies. We transform spaces into magical realms.</p>
+    <!-- Brand Story -->
+    <section class="about-section container reveal">
+        <div class="about-content">
+            <div class="about-text">
+                <h2 class="section-title">The Boutique Studio</h2>
+                <p class="section-subtitle">A heritage of precision and passion in Lusaka.</p>
+                <div class="gold-divider-left" style="margin-bottom: 2rem;"></div>
+                <p>Lucy’s Creamy Creations is a boutique cake studio in Lusaka, specializing in handcrafted, elegant cakes made with precision, passion, and exceptional attention to detail. We believe that every celebration deserves a centerpiece that is as beautiful as it is delicious.</p>
+                <br>
+                <a href="#contact" class="btn btn-primary">Start Your Consultation</a>
             </div>
-            <div class="service-card">
-                <i class="fas fa-utensils service-icon text-gold"></i>
-                <h3>Catering Services</h3>
-                <p>Professional catering that delights the palate with beautiful presentation and mouth-watering flavors.</p>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-building service-icon text-gold"></i>
-                <h3>Corporate Events</h3>
-                <p>Refined setups for corporate galas, end-of-year functions, and professional gatherings.</p>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-birthday-cake service-icon text-gold"></i>
-                <h3>Private Parties</h3>
-                <p>Intimate to grandiose setups for birthdays, anniversaries, and lavish private celebrations.</p>
+            <div class="about-image">
+                <img src="Assets/671301952_977556971459387_5081459989943831173_n.jpg" alt="Boutique Studio">
             </div>
         </div>
     </section>
 
-    <!-- Featured Highlights -->
-    <section class="section-padding" style="background-color: var(--background-alt);">
+    <!-- Signature Collections -->
+    <section id="collections" class="section-padding reveal">
         <div class="container">
-            <div class="text-center reveal">
-                <h2 class="section-title">Featured Highlights</h2>
-                <p class="section-subtitle">A glimpse into our world of elegance and grand celebrations.</p>
+            <div class="text-center">
+                <h2 class="section-title gold-shimmer">Signature Collections</h2>
+                <p class="section-subtitle">Exceptional designs for extraordinary moments</p>
             </div>
             
-            <div class="gallery-grid reveal">
-                <div class="gallery-item">
-                    <img src="Assets/627044655_1562209205907223_4129564044516197422_n.jpg" alt="Elegant Setup">
-                    <div class="gallery-overlay">
-                        <h4>Elegant Setup</h4>
-                    </div>
+            <div class="services-grid">
+                <div class="service-card reveal stagger-1">
+                    <img src="Assets/671974288_977556961459388_7515349857178099217_n.jpg" alt="Wedding Cakes" style="width: 100%; height: 200px; object-fit: cover; border-radius: 4px; margin-bottom: 20px;">
+                    <i class="fas fa-rings service-icon"></i>
+                    <h3>Wedding Cakes</h3>
+                    <p>Grand architectural designs that serve as the heart of your celebration.</p>
                 </div>
-                <div class="gallery-item">
-                    <img src="Assets/627243828_1562210929240384_7332940601824509254_n.jpg" alt="Wedding Decor">
-                    <div class="gallery-overlay">
-                        <h4>Wedding Decor</h4>
-                    </div>
+                <div class="service-card reveal stagger-2">
+                    <img src="Assets/661701865_968431492371935_1313865333343964078_n.jpg" alt="Celebration Cakes" style="width: 100%; height: 200px; object-fit: cover; border-radius: 4px; margin-bottom: 20px;">
+                    <i class="fas fa-birthday-cake service-icon"></i>
+                    <h3>Celebration Cakes</h3>
+                    <p>From birthdays to anniversaries, we make every milestone spectacular.</p>
                 </div>
-                <div class="gallery-item">
-                    <img src="Assets/628308741_1562209752573835_4333584941157293645_n.jpg" alt="Catering Presentation">
-                    <div class="gallery-overlay">
-                        <h4>Catering Showcase</h4>
-                    </div>
+                <div class="service-card reveal stagger-3">
+                    <img src="Assets/662967740_968431845705233_1989057861817631557_n.jpg" alt="Custom Luxury" style="width: 100%; height: 200px; object-fit: cover; border-radius: 4px; margin-bottom: 20px;">
+                    <i class="fas fa-gem service-icon"></i>
+                    <h3>Custom Luxury</h3>
+                    <p>Bespoke creations tailored to your specific vision and aesthetic.</p>
                 </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&q=80&w=800" alt="Exquisite Details">
-                    <div class="gallery-overlay">
-                        <h4>Exquisite Details</h4>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="text-center" style="margin-top: 3rem;">
-                <a href="portfolio.html" class="btn btn-outline" style="border-color: var(--primary-color); color: var(--primary-color);">Discover More</a>
             </div>
         </div>
     </section>
@@ -177,21 +148,129 @@
         </div>
     </section>
 
-    <!-- Testimonials -->
-    <section class="section-padding container">
-        <div class="text-center reveal">
-            <h2 class="section-title">Client Love</h2>
-            <p class="section-subtitle">What our esteemed clients say about our services.</p>
+    <!-- Featured Work (Gallery) -->
+    <section id="gallery" class="section-padding reveal">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">Featured Work</h2>
+                <p class="section-subtitle">A gallery of our most exquisite creations</p>
+            </div>
+            
+            <div class="gallery-grid reveal">
+                <div class="gallery-item stagger-1">
+                    <img src="Assets/520261094_761181789763574_736140747506220698_n.jpg" alt="Cake 1">
+                    <div class="gallery-overlay">
+                        <h4>Royal Ivory</h4>
+                    </div>
+                </div>
+                <div class="gallery-item stagger-2">
+                    <img src="Assets/514339084_751220140759739_860181846552836053_n.jpg" alt="Cake 2">
+                    <div class="gallery-overlay">
+                        <h4>Midnight Gold</h4>
+                    </div>
+                </div>
+                <div class="gallery-item stagger-3">
+                    <img src="Assets/652489445_952952373919847_1891421747853601468_n.jpg" alt="Cake 3">
+                    <div class="gallery-overlay">
+                        <h4>Floral Bloom</h4>
+                    </div>
+                </div>
+                <div class="gallery-item stagger-4">
+                    <img src="Assets/524165111_763313562883730_5597201225994122379_n.jpg" alt="Cake 4">
+                    <div class="gallery-overlay">
+                        <h4>Minimalist Pearl</h4>
+                    </div>
+                </div>
+                <div class="gallery-item stagger-1">
+                    <img src="Assets/504431654_751219077426512_6924814586326730565_n.jpg" alt="Cake 5">
+                    <div class="gallery-overlay">
+                        <h4>Ethereal White</h4>
+                    </div>
+                </div>
+                <div class="gallery-item stagger-2">
+                    <img src="Assets/515486738_763313826217037_627680775338429037_n.jpg" alt="Cake 6">
+                    <div class="gallery-overlay">
+                        <h4>Golden Elegance</h4>
+                    </div>
+                </div>
+                <div class="gallery-item stagger-3">
+                    <img src="Assets/523976341_763314266216993_3468920605768974151_n.jpg" alt="Cake 7">
+                    <div class="gallery-overlay">
+                        <h4>Artisan Craft</h4>
+                    </div>
+                </div>
+                <div class="gallery-item stagger-4">
+                    <img src="Assets/651000466_951655497382868_8731591619982729955_n.jpg" alt="Cake 8">
+                    <div class="gallery-overlay">
+                        <h4>Classic Tier</h4>
+                    </div>
+                </div>
+                <div class="gallery-item stagger-1">
+                    <img src="Assets/660068894_964123746136043_1403005296055466482_n.jpg" alt="Cake 9">
+                    <div class="gallery-overlay">
+                        <h4>Velvet Dream</h4>
+                    </div>
+                </div>
+                <div class="gallery-item stagger-2">
+                    <img src="Assets/667932375_971268062088278_2542683084023092724_n.jpg" alt="Cake 10">
+                    <div class="gallery-overlay">
+                        <h4>Heritage Gold</h4>
+                    </div>
+                </div>
+                <div class="gallery-item stagger-3">
+                    <img src="Assets/673500108_979979114550506_5755026370901391483_n.jpg" alt="Cake 11">
+                    <div class="gallery-overlay">
+                        <h4>Modern Lace</h4>
+                    </div>
+                </div>
+                <div class="gallery-item stagger-4">
+                    <img src="Assets/674336748_979980024550415_6328794200526499769_n.jpg" alt="Cake 12">
+                    <div class="gallery-overlay">
+                        <h4>Bespoke Finish</h4>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        <div class="testimonials-slider reveal">
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section-padding reveal">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title gold-shimmer">The Experience</h2>
+                <p class="section-subtitle">Beyond the Cake</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-leaf service-icon"></i>
+                    <h3>Premium Ingredients</h3>
+                    <p>Finest chocolate, Madagascar vanilla, and organic berries.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-pencil-alt service-icon"></i>
+                    <h3>Custom Design</h3>
+                    <p>A personalized journey from sketch to final masterpiece.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-hand-holding-heart service-icon"></i>
+                    <h3>Dedicated Service</h3>
+                    <p>Seamless delivery and professional setup for your event.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section-padding container reveal">
+        <div class="testimonials-slider">
             <div class="testimonial-item active">
-                <p class="testimonial-text">"Beautiful décor and professional service. Sandy's team transformed our wedding venue into an absolute dream. Everything was breathtaking!"</p>
-                <h4 class="testimonial-author">- Chileshe & Mutinta</h4>
+                <p class="testimonial-text">"Absolutely stunning and delicious — exceeded all expectations."</p>
+                <p class="testimonial-author">— Mutinta K., Lusaka</p>
             </div>
             <div class="testimonial-item">
-                <p class="testimonial-text">"Highly recommend for weddings and events. The catering was superb, and the presentation of the food left all our guests amazed. True luxury in Mongu."</p>
-                <h4 class="testimonial-author">- The Kalenga Family</h4>
+                <p class="testimonial-text">"The detail on our wedding cake was breathtaking. A true work of art."</p>
+                <p class="testimonial-author">— Chileshe M., Lusaka</p>
             </div>
             <div class="slider-dots">
                 <div class="dot active"></div>
@@ -203,80 +282,91 @@
     <!-- CTA Banner -->
     <section class="cta-banner reveal">
         <div class="container">
-            <h2>Let’s Make Your Event Unforgettable</h2>
-            <a href="#" class="btn btn-primary open-modal">Book Now</a>
+            <h2>Let’s Create Something Beautiful Together</h2>
+            <a href="https://wa.me/260971042619" class="btn btn-primary">Start Your Order</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding container reveal">
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <h3>Get In Touch</h3>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+260 971 042619</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>lucymubanga0@gmail.com</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Libala South, Lusaka</span>
+                </div>
+                <br>
+                <p>We invite you to our studio for a private tasting and design consultation.</p>
+            </div>
+            <form class="contact-form" action="https://formsubmit.co/lucymubanga0@gmail.com" method="POST">
+                <!-- FormSubmit Configuration -->
+                <input type="hidden" name="_subject" value="New Order Inquiry from Lucy's Creamy Creations">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+                
+                <div class="form-group">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
+            </form>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container footer-grid">
-            <div>
-                <h3 class="footer-logo">Sandy's<span>.</span></h3>
-                <p class="footer-text">Mongu-based luxury event service provider dedicated to delivering elegant décor and exceptional catering for all occasions.</p>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3 class="footer-logo">
+                        <img src="Assets/logo.png" alt="Lucy’s Creamy Creations Logo" style="height: 200px; width: auto; border-radius: 50%; margin-bottom: 1rem;">
+                    </h3>
+                    <p class="footer-text">Boutique cake studio in Lusaka, specializing in handcrafted, elegant cakes made with precision and passion.</p>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#collections">Collections</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Follow Us</h4>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    </ul>
+                </div>
             </div>
-            <div>
-                <h4 class="footer-heading">Quick Links</h4>
-                <ul class="footer-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                </ul>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lucy’s Creamy Creations. All Rights Reserved.</p>
             </div>
-            <div>
-                <h4 class="footer-heading">Contact Us</h4>
-                <ul class="footer-links">
-                    <li><i class="fas fa-phone"></i> 0977301597</li>
-                    <li><i class="fas fa-envelope"></i> sandrakalenga12@gmail.com</li>
-                    <li><i class="fas fa-map-marker-alt"></i> Mongu, Zambia</li>
-                </ul>
-            </div>
-        </div>
-        <div class="container footer-bottom">
-            <p>&copy; 2026 Sandy's Decor and Catering. All Rights Reserved. Crafted with passion.</p>
         </div>
     </footer>
 
-    <!-- Floating WhatsApp -->
-    <a href="https://wa.me/260977301597" class="floating-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+    <!-- Back to Top -->
+    <button class="back-to-top" aria-label="Back to Top"><i class="fas fa-chevron-up"></i></button>
+
+    <!-- WhatsApp Floating -->
+    <a href="https://wa.me/260971042619" class="floating-whatsapp" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
-
-    <!-- Booking Modal -->
-    <div class="modal-overlay" id="bookingModal">
-        <div class="modal-content">
-            <span class="modal-close"><i class="fas fa-times"></i></span>
-            <h3 class="modal-title">Request a Quote</h3>
-            <form action="#" class="contact-form" style="padding: 0; box-shadow: none;">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Your Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="tel" class="form-control" placeholder="Phone Number" required>
-                </div>
-                <div class="form-group">
-                    <select class="form-control" required>
-                        <option value="" disabled selected>Event Type</option>
-                        <option value="wedding">Wedding</option>
-                        <option value="traditional">Traditional Event</option>
-                        <option value="corporate">Corporate</option>
-                        <option value="birthday">Birthday / Private</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <input type="date" class="form-control" required>
-                </div>
-                <button type="submit" class="btn btn-primary btn-submit">Submit Request</button>
-            </form>
-        </div>
-    </div>
-
-    <!-- Lightbox -->
-    <div class="lightbox" id="lightbox">
-        <span class="lightbox-close"><i class="fas fa-times"></i></span>
-        <img src="" alt="Enlarged" class="lightbox-img" id="lightbox-img">
-    </div>
 
     <!-- Scripts -->
     <script src="js/main.js"></script>
